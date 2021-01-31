@@ -1,7 +1,5 @@
 package com.example.apartment_rental_application;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +7,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.squareup.picasso.Picasso;
 
 public class ApartmentDetailDescription extends AppCompatActivity {
 
@@ -32,6 +33,14 @@ public class ApartmentDetailDescription extends AppCompatActivity {
         share = (ImageButton) findViewById(R.id.share);
 
 
+        Intent intent = getIntent();
+        Picasso.get().load(intent.getStringExtra("Image")).into(Image);
+        String price = intent.getExtras().getString("Price");
+        String title = intent.getExtras().getString("Title");
+        String description = intent.getExtras().getString("Description");
+        Price.setText(price);
+        Title.setText(title);
+        Description.setText(description);
 
 
         button.setOnClickListener(new View.OnClickListener() {
