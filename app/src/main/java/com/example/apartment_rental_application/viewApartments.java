@@ -1,7 +1,6 @@
 package com.example.apartment_rental_application;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,7 +40,6 @@ public class viewApartments extends AppCompatActivity {
             @NonNull
             @Override
             public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
                 View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_recycleview,parent,false);
                 return new ItemViewHolder(v);
             }
@@ -53,7 +52,7 @@ public class viewApartments extends AppCompatActivity {
                 holder.Description.setText(model.getDescription());
                 holder.More.setOnClickListener(new View.OnClickListener() {
                     @Override public void onClick(View view) {
-                        Intent intent = new Intent(view.getContext(),DescriptionPage.class);
+                        Intent intent = new Intent(view.getContext(),ApartmentDetailDescription.class);
                         intent.putExtra("Image",model.getImage());
                         intent.putExtra("Price",model.getPrice());
                         intent.putExtra("Title",model.getTitle());

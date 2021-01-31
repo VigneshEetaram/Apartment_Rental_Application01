@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/Image_detail"
                 android:layout_width="match_parent"
-                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:src="@drawable/ic_baseline_image_24"
                 android:layout_height="200dp"
                 android:scaleType="fitXY"/>
 
