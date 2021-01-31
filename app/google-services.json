@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190025550658",
+    "project_id": "apartmentrentalapplicati-4695d",
+    "storage_bucket": "apartmentrentalapplicati-4695d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190025550658:android:1ffb5f2ac35d9fdbe5d6db",
+        "android_client_info": {
+          "package_name": "com.example.apartment_rental_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190025550658-1gajj92ut1bci3qugpeceoaumhnbjf51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs9nZDUZNZ2glsXfMxqgpjHwL-kiLuy50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190025550658-1gajj92ut1bci3qugpeceoaumhnbjf51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
