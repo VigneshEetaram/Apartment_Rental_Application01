@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Apartment_Rental_Application">
-        <activity android:name=".ApartmentDetailDescription"></activity>
+        <activity android:name=".Messages"></activity>
+        <activity android:name=".ApartmentDetailDescription" />
         <activity android:name=".Login" />
         <activity android:name=".signUp" />
         <activity android:name=".Renterlogin" />
