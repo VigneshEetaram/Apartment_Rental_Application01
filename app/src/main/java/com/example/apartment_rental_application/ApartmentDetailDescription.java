@@ -2,7 +2,9 @@ package com.example.apartment_rental_application;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,6 +30,17 @@ public class ApartmentDetailDescription extends AppCompatActivity {
         Title = (TextView) findViewById(R.id.titledes);
         favorite = findViewById(R.id.favorite);
         share = (ImageButton) findViewById(R.id.share);
+
+
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(),Messages.class);
+                startActivity(i);
+            }
+        });
 
 
     }
