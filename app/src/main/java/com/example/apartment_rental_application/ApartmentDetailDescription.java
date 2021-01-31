@@ -10,5 +10,7 @@ public class ApartmentDetailDescription extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apartment_detail_description);
+
+
     }
 }
