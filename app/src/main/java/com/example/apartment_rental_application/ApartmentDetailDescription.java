@@ -21,6 +21,14 @@ public class ApartmentDetailDescription extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apartment_detail_description);
 
+        button = findViewById(R.id.message);
+        Image = (ImageView) findViewById(R.id.Imagedes);
+        Price= (TextView) findViewById(R.id.Pricedes);
+        Description= (TextView) findViewById(R.id.Description);
+        Title = (TextView) findViewById(R.id.titledes);
+        favorite = findViewById(R.id.favorite);
+        share = (ImageButton) findViewById(R.id.share);
+
 
     }
 }
