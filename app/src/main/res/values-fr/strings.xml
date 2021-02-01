@@ -26,4 +26,9 @@
     <string name="Title">Titre</string>
     <string name="Description">La description:</string>
     <string name="Text">Texte</string>
+    <string name="PhoneNumber">Numéro de téléphone</string>
+    <string name="Admin_Page">Page d administration</string>
+    <string name="Logout">Se déconnecter</string>
+    <string name="Renter_page">Page du locataire</string>
+    <string name="Tenant_Page">Page du locataire</string>
 </resources>

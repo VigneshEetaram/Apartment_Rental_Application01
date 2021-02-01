@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/Register"
         android:textSize="35dp"
         android:layout_weight="1"
         android:textColor="#F17A0A"
@@ -35,7 +35,7 @@
     <EditText
         android:id="@+id/Register_name"
         android:textStyle="bold"
-        android:hint="Name"
+        android:hint="@string/Name"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -45,7 +45,7 @@
     <EditText
         android:id="@+id/Register_phone"
         android:textStyle="bold"
-        android:hint="Phone Number"
+        android:hint="@string/PhoneNumber"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/Register_Email"
         android:textStyle="bold"
-        android:hint="Email"
+        android:hint="@string/Email"
         android:inputType="textEmailAddress"
 
         android:layout_marginTop="20dp"
@@ -67,7 +67,7 @@
     <EditText
         android:id="@+id/Register_password"
         android:textStyle="bold"
-        android:hint="Password"
+        android:hint="@string/Password"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="As Tenant"
+            android:text="@string/As_Tenant"
             android:layout_marginLeft="20dp"
             android:textSize="22dp"
             android:textColor="?android:attr/colorFocusedHighlight"
@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="As Renter"
+            android:text="@string/As_Renter"
             android:textColor="?android:attr/colorFocusedHighlight"
             android:textSize="22dp"
             ></CheckBox>
@@ -108,7 +108,7 @@
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="CREATE PROFILE"
+        android:text="@string/CREATE_PROFILE"
         android:layout_gravity="center"
         android:background="?android:attr/colorFocusedHighlight"
         app:backgroundTint="@color/black"

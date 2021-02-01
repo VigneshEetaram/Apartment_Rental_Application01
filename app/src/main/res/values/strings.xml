@@ -24,4 +24,9 @@
     <string name="Title">Title</string>
     <string name="Description">Description:</string>
     <string name="Text">Text</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Admin_Page">Admin Page</string>
+    <string name="Logout">Logout</string>
+    <string name="Renter_page">Renter Page</string>
+    <string name="Tenant_Page">Tenant Page</string>
 </resources>
