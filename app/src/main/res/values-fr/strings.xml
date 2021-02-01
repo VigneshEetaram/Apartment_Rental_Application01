@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Apartment_Rental_Application</string>
+    <string name="ChangeLanguage">changer de langue</string>
+    <string name="title">Titre</string>
+</resources>

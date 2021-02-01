@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="@string/Register"
         android:textSize="35dp"
         android:layout_weight="1"
         android:textColor="#F17A0A"

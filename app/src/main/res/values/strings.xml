@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Apartment_Rental_Application</string>
+    <string name="ChangeLanguage">Change Language</string>
+    <string name="title">Title</string>
+    <string name="Price">Price</string>
+    <string name="more">more...</string>
+    <string name="Register">Register</string>
 </resources>
