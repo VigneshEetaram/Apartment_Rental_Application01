@@ -73,7 +73,7 @@ public class viewApartments extends AppCompatActivity {
 
         private TextView Price,Title,Description;
         private ImageView Image;
-        private Button More,Message;
+        private Button More;
         String id;
 
         public ItemViewHolder(@NonNull View itemView) {
@@ -81,7 +81,6 @@ public class viewApartments extends AppCompatActivity {
             Price = itemView.findViewById(R.id.Price_detail);
             Image = itemView.findViewById(R.id.Image_detail);
             More = itemView.findViewById(R.id.more);
-            Message = itemView.findViewById(R.id.message);
             Title = itemView.findViewById(R.id.Title);
             Description=itemView.findViewById(R.id.description);
         }
