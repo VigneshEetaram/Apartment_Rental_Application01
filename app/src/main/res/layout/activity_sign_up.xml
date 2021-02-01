@@ -42,22 +42,26 @@
         android:layout_height="wrap_content"
         android:id="@+id/uploadPhoto"
         android:layout_gravity="center"
-        android:text="Upload Photo"
-        ></Button>
+        android:text="@string/UploadPhoto"
+        >
+
+    </Button>
+
     <EditText
         android:id="@+id/profileName"
         android:textStyle="bold"
-        android:hint="Name"
+        android:hint="@string/Name"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"/>
+
     <EditText
         android:id="@+id/profileDOB"
         android:textStyle="bold"
-        android:hint="Birthday (dd/mm/yy)"
+        android:hint="@string/Birthday"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -65,10 +69,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"/>
+
     <EditText
         android:id="@+id/profileAddress"
         android:textStyle="bold"
-        android:hint="Address"
+        android:hint="@string/Address"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -76,10 +81,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"/>
+
     <EditText
         android:id="@+id/profileNewPassword"
         android:textStyle="bold"
-        android:hint="Password"
+        android:hint="@string/Password"
         android:layout_marginTop="20dp"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -100,28 +106,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="As Tenant"
+            android:text="@string/As_Tenant"
             android:id="@+id/chckTenant"
             android:layout_marginLeft="20dp"
             android:textSize="22dp"
             android:textColor="?android:attr/colorFocusedHighlight"
-            ></CheckBox>
+            >
+
+        </CheckBox>
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="As Renter"
+            android:text="@string/As_Renter"
             android:id="@+id/chckRenter"
             android:textColor="?android:attr/colorFocusedHighlight"
             android:textSize="22dp"
-            ></CheckBox>
+            >
+
+        </CheckBox>
     </LinearLayout>
     <Button
         android:id="@+id/createProfile"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="CREATE PROFILE"
+        android:text="@string/CREATE_PROFILE"
         android:layout_gravity="center"
         android:background="?android:attr/colorFocusedHighlight"
         app:backgroundTint="@color/black"
