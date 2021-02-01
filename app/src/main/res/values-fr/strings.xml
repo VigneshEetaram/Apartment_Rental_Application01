@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Apartment_Rental_Application</string>
+    <string name="ChangeLanguage">changer de langue</string>
+    <string name="title">Titre</string>
+
+    <string name="Price">Prix</string>
+    <string name="more">plus...</string>
+    <string name="Register"> Inscrivez-vous ici </string>
+    <string name="UploadPhoto">Envoyer la photo</string>
+    <string name="Name">Nom</string>
+    <string name="Birthday">Anniversaire (jj / mm / aa)</string>
+    <string name="Address">Adresse</string>
+    <string name="Password">Mot de passe</string>
+    <string name="As_Tenant">En tant que locataire</string>
+    <string name="As_Renter">En tant que locataire</string>
+    <string name="CREATE_PROFILE">CRÉER UN PROFIL</string>
+    <string name="CREATE_ACCOUNT">CRÉER UN COMPTE</string>
+    <string name="LOG_IN">CONNECTEZ-VOUS ICI</string>
+    <string name="BROWSE_RENTALS">PARCOURIR LES LOCATIONS</string>
+    <string name="TermsConditions">En utilisant la location d appartements, vous acceptez nos conditions et notre politique de confidentialité</string>
+    <string name="Messages">messages</string>
+    <string name="SignIn_Register">Connexion / Inscription</string>
+    <string name="Email">Email</string>
+    <string name="Forgot_Password">Mot de passe Frogot?</string>
+    <string name="Title">Titre</string>
+    <string name="Description">La description:</string>
+    <string name="Text">Texte</string>
+    <string name="PhoneNumber">Numéro de téléphone</string>
+    <string name="Admin_Page">Page d administration</string>
+    <string name="Logout">Se déconnecter</string>
+    <string name="Renter_page">Page du locataire</string>
+    <string name="Tenant_Page">Page du locataire</string>
+</resources>

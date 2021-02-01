@@ -36,7 +36,7 @@
                     android:id="@+id/Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Title"
+                    android:text="@string/title"
                     android:textColor="@color/black"
                     android:layout_weight="2"/>
 
@@ -58,7 +58,7 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Price"/>
+                        android:text="@string/Price"/>
                 </LinearLayout>
 
                 <ImageView
@@ -73,7 +73,7 @@
                     android:layout_width="108dp"
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
-                    android:text="more..."
+                    android:text="@string/more"
                     android:textAllCaps="false"
                     android:textColor="@color/black" />
 
@@ -86,5 +86,6 @@
                 android:visibility="invisible" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+    <include layout="@layout/message_icon"/>
 
 </RelativeLayout>
