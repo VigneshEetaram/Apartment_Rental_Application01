@@ -20,6 +20,7 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
         <activity android:name=".Tenant" />
+        <activity android:name=".MyPostedApartments" />
         <activity android:name=".Admin" />
         <activity android:name=".viewApartments" />
         <activity android:name=".Login" />
