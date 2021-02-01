@@ -14,7 +14,12 @@
         <activity android:name=".Posted_Apartments"></activity>
         <activity android:name=".Post_Apartment_Page" />
         <activity android:name=".Renter_Home" />
-        <activity android:name=".SplashScreen" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".Tenant" />
         <activity android:name=".Admin" />
         <activity android:name=".viewApartments" />
@@ -22,11 +27,6 @@
         <activity android:name=".Messages" />
         <activity android:name=".ApartmentDetailDescription" />
         <activity android:name=".signUp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
