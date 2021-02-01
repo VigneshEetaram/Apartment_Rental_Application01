@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
     EditText lEmail, lPassword;
     FirebaseFirestore lStore;
     FirebaseAuth lAuth;
-    Button lLogin,lRegister, lForgotPassword;
+    Button lLogin,lRegister, lForgotPassword, lAdminLogin;
     Boolean valid = true;
 
     @Override
@@ -37,6 +37,14 @@ public class Login extends AppCompatActivity {
         lLogin = findViewById(R.id.LogIn_BTN);
         lRegister = findViewById(R.id.Login_register);
         lForgotPassword = findViewById(R.id.Register_forgot);
+        lAdminLogin = findViewById(R.id.btn_adminLogin);
+
+        lAdminLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),adminLogin.class));
+            }
+        });
 
 
         lStore = FirebaseFirestore.getInstance();
