@@ -29,4 +29,7 @@
     <string name="Logout">Logout</string>
     <string name="Renter_page">Renter Page</string>
     <string name="Tenant_Page">Tenant Page</string>
+    <string name="PostApartments">Post Apartments</string>
+    <string name="PostedApartments">Posted Apartments</string>
+    <string name="ViewApartment">View All Apartments</string>
 </resources>

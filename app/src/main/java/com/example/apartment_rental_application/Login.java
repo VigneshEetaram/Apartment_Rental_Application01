@@ -120,8 +120,10 @@ public class Login extends AppCompatActivity {
                     finish();
                 }
                 if(documentSnapshot.getString("isRenter") != null){
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                    finish();
+                    String email = lEmail.getText().toString();
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    intent.putExtra("Email",email);
+                    startActivity(intent);
                 }
             }
         });

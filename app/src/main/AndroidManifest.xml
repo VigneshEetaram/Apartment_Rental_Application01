@@ -11,7 +11,6 @@
         android:theme="@style/Theme.Apartment_Rental_Application">
         <activity android:name=".adminHome"></activity>
         <activity android:name=".adminLogin" />
-        <activity android:name=".Posted_Apartments"></activity>
         <activity android:name=".Post_Apartment_Page" />
         <activity android:name=".Renter_Home" />
         <activity android:name=".SplashScreen">

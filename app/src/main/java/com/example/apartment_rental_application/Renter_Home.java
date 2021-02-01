@@ -1,15 +1,15 @@
-package com.example.apartment_rental_application;
-
-import androidx.appcompat.app.AppCompatActivity;
+    package com.example.apartment_rental_application;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Renter_Home extends AppCompatActivity {
 
-    ImageButton post,posted;
+    ImageButton post,posted,viewapt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,16 @@ public class Renter_Home extends AppCompatActivity {
         posted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Renter_Home.this,Posted_Apartments.class);
+                Intent intent = new Intent(Renter_Home.this,MyPostedApartments.class);
+                startActivity(intent);
+            }
+        });
+
+        viewapt = findViewById(R.id.viewButton);
+        viewapt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Renter_Home.this,viewApartments.class);
                 startActivity(intent);
             }
         });
