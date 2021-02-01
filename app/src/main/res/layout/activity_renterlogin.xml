@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/input_design"
+    android:background="#FFEB3B"
     android:orientation="vertical"
     tools:context=".Renterlogin">
 
@@ -12,9 +12,9 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="100dp"
         android:layout_marginLeft="70dp"
-        android:background="@drawable/output" />
+        android:layout_marginTop="100dp"
+        android:background="@drawable/splash_logo" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
             android:background="@drawable/buttons"
             android:text="@string/CREATE_ACCOUNT"
             android:textColor="@color/black"
-            app:backgroundTint="?android:attr/colorActivatedHighlight"
+            app:backgroundTint="#03A9F4"
             app:backgroundTintMode="src_over"
             tools:layout_editor_absoluteX="151dp"
             tools:layout_editor_absoluteY="269dp" />
@@ -42,8 +42,8 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/input_design"
             android:text="@string/LOG_IN"
-            android:textColor="?android:attr/colorFocusedHighlight"
-            app:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            app:backgroundTint="#2196F3"
             app:backgroundTintMode="add"
             tools:layout_editor_absoluteX="151dp"
             tools:layout_editor_absoluteY="388dp" />
@@ -72,8 +72,6 @@
 
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>

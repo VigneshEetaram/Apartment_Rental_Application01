@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button mLogoutBTN;
+    Button mLogoutBTN,btnViewAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mLogoutBTN = findViewById(R.id.Main_logout);
-
+        btnViewAd = findViewById(R.id.btn_viewAds);
         /**
          * Logout renter
          */
@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(getApplicationContext(),Login.class));
                 finish();
+            }
+        });
+
+        btnViewAd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,viewApartments.class));
+
             }
         });
     }

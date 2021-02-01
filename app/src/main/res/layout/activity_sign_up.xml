@@ -115,4 +115,17 @@
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="388dp" />
 
+    <Button
+        android:id="@+id/login_BTN"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:text="LOGIN"
+        app:backgroundTint="@color/black"
+        app:backgroundTintMode="add"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="388dp" />
+
 </LinearLayout>

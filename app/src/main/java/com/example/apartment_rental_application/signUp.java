@@ -29,7 +29,7 @@ public class signUp extends AppCompatActivity {
 
   EditText mName, mEmail, mPassword, mPhoneNumber;
   ImageView mImage;
-  Button mRegisterBTN;
+  Button mRegisterBTN, mLoginBTN;
   Boolean valid = true;
   CheckBox mTenant, mRenter;
 
@@ -49,6 +49,7 @@ public class signUp extends AppCompatActivity {
         mRegisterBTN = findViewById(R.id.Register_BTN);
         mRenter = findViewById(R.id.Register_renter);
         mTenant = findViewById(R.id.Register_tenant);
+        mLoginBTN = findViewById(R.id.login_BTN);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -91,6 +92,19 @@ public class signUp extends AppCompatActivity {
                 finish();
             }
         });
+
+        /**
+         * Go Back to Login Activity
+         */
+
+        mLoginBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                finish();
+            }
+        });
+
 
         /**
          * Create user and store data to database
