@@ -10,26 +10,24 @@
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/SignIn_Register"
+    android:text="Sign In / Register"
     android:textSize="30dp"
     android:gravity="center_horizontal"
     android:textColor="#F17A0A"
     >
 </TextView>
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/output"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        >
 
-    </ImageView>
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/output"></ImageView>
 
         <EditText
-            android:id="@+id/profileEmail"
+            android:id="@+id/Login_Email"
             android:textStyle="bold"
-            android:hint="@string/Email"
+            android:hint="Email"
             android:layout_marginTop="20dp"
             android:textColor="#F17A0A"
             android:textSize="22dp"
@@ -41,9 +39,9 @@
             android:layout_marginLeft="20dp"/>
 
     <EditText
-        android:id="@+id/profilePassword"
+        android:id="@+id/Login_Password"
         android:textStyle="bold"
-        android:hint="@string/Password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#F17A0A"
         android:textSize="22dp"
@@ -55,11 +53,11 @@
         android:layout_marginLeft="20dp"/>
 
     <Button
-        android:id="@+id/logIn"
+        android:id="@+id/LogIn_BTN"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/LOG_IN"
+        android:text="LOG IN"
         android:layout_gravity="center"
         android:background="?android:attr/colorFocusedHighlight"
         app:backgroundTint="@color/black"
@@ -77,24 +75,21 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/register"
+            android:id="@+id/Login_register"
             android:layout_weight="1"
-            android:text="@string/Register"
+            android:text="Register"
             android:textColor="?android:attr/colorFocusedHighlight"
-            >
-
-        </Button>
+            ></Button>
         <Button
+            android:id="@+id/Register_forgot"
+
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/forgotPassword"
             android:layout_weight="1"
-            android:text="@string/Forgot_Password"
+            android:text="Forgot Password?"
             android:textColor="?android:attr/colorFocusedHighlight"
 
-            >
-
-        </Button>
+            ></Button>
     </LinearLayout>
 
 </LinearLayout>

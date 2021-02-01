@@ -4,10 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- *
- * Renter Login Main function
- */
+
 public class Renterlogin extends AppCompatActivity {
 
     @Override
