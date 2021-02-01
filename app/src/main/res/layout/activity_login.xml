@@ -16,16 +16,16 @@
     android:textColor="#F17A0A"
     >
 </TextView>
+
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/output"
-        android:layout_marginTop="10dp"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
         android:layout_gravity="center"
-        ></ImageView>
+        android:layout_marginTop="10dp"
+        android:src="@drawable/output"></ImageView>
 
         <EditText
-            android:id="@+id/profileEmail"
+            android:id="@+id/Login_Email"
             android:textStyle="bold"
             android:hint="Email"
             android:layout_marginTop="20dp"
@@ -39,7 +39,7 @@
             android:layout_marginLeft="20dp"/>
 
     <EditText
-        android:id="@+id/profilePassword"
+        android:id="@+id/Login_Password"
         android:textStyle="bold"
         android:hint="Password"
         android:inputType="textPassword"
@@ -53,7 +53,7 @@
         android:layout_marginLeft="20dp"/>
 
     <Button
-        android:id="@+id/logIn"
+        android:id="@+id/LogIn_BTN"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -75,15 +75,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/register"
+            android:id="@+id/Login_register"
             android:layout_weight="1"
             android:text="Register"
             android:textColor="?android:attr/colorFocusedHighlight"
             ></Button>
         <Button
+            android:id="@+id/Register_forgot"
+
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/forgotPassword"
             android:layout_weight="1"
             android:text="Forgot Password?"
             android:textColor="?android:attr/colorFocusedHighlight"
