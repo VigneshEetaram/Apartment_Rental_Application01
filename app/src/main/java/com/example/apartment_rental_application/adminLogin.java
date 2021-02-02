@@ -1,19 +1,19 @@
 package com.example.apartment_rental_application;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class adminLogin extends AppCompatActivity {
     EditText admEmail,admPass;
     Button adminLogin;
+    Button Logout;
     String email;
     String password;
 
@@ -25,6 +25,7 @@ public class adminLogin extends AppCompatActivity {
         admEmail = (EditText)findViewById(R.id.txtAdminEmail);
         admPass = (EditText)findViewById(R.id.txtAdminPassword);
         adminLogin = (Button)findViewById(R.id.btnAdminLogin);
+        Logout = (Button)findViewById(R.id.logoutadmin);
 
         adminLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,9 @@ public class adminLogin extends AppCompatActivity {
                 checkConditions();
             }
         });
+
+
+
     }
 
     private void checkConditions() {
@@ -57,6 +61,8 @@ public class adminLogin extends AppCompatActivity {
         }
         checkLogin();
     }
+
+
 
     private void checkLogin() {
         if(email.equals("admin@gmail.com") &&

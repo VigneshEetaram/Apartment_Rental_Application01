@@ -50,6 +50,7 @@ public class viewApartments extends AppCompatActivity {
                 holder.Title.setText(model.getTitle());
                 holder.Price.setText(model.getPrice());
                 holder.Description.setText(model.getDescription());
+                holder.Email.setText(model.getDescription());
                 holder.More.setOnClickListener(new View.OnClickListener() {
                     @Override public void onClick(View view) {
                         Intent intent = new Intent(view.getContext(),ApartmentDetailDescription.class);
@@ -57,6 +58,7 @@ public class viewApartments extends AppCompatActivity {
                         intent.putExtra("Price",model.getPrice());
                         intent.putExtra("Title",model.getTitle());
                         intent.putExtra("Description",model.getDescription());
+                        intent.putExtra("Email",model.getDescription());
                         startActivity(intent);
                     }
                 });
@@ -72,6 +74,7 @@ public class viewApartments extends AppCompatActivity {
     static class ItemViewHolder extends RecyclerView.ViewHolder {
 
         TextView Price;
+        TextView Email;
         TextView Title;
         TextView Description;
         ImageView Image;
@@ -81,6 +84,7 @@ public class viewApartments extends AppCompatActivity {
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             Price = itemView.findViewById(R.id.Price_detail);
+            Email = itemView.findViewById(R.id.Email);
             Image = itemView.findViewById(R.id.Image_detail);
             More = itemView.findViewById(R.id.more);
             Title = itemView.findViewById(R.id.Title);
