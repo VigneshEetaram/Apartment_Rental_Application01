@@ -5,7 +5,16 @@ public class Model {
     String Title;
     String Price;
     String Description;
+    String Email;
     String Id;
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
 
     public Model() {
     }

@@ -33,9 +33,9 @@ public class MyPostedApartments extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
 
         Intent intent = getIntent();
-        String Email = intent.getStringExtra("Email");
+         String email = intent.getStringExtra("Email");
 
-        Query query = firebaseFirestore.collection("Apartments").whereEqualTo("Email",Email);
+        Query query = firebaseFirestore.collection("Apartments").whereEqualTo("Email",email);
 
         FirestoreRecyclerOptions<Model> options = new FirestoreRecyclerOptions.Builder<Model>()
                 .setQuery(query, Model.class)

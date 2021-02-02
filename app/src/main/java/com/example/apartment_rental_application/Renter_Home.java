@@ -1,15 +1,19 @@
     package com.example.apartment_rental_application;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+    import android.content.Intent;
+    import android.os.Bundle;
+    import android.view.View;
+    import android.widget.Button;
+    import android.widget.ImageButton;
 
-import androidx.appcompat.app.AppCompatActivity;
+    import androidx.appcompat.app.AppCompatActivity;
 
-public class Renter_Home extends AppCompatActivity {
+    import com.google.firebase.auth.FirebaseAuth;
+
+    public class Renter_Home extends AppCompatActivity {
 
     ImageButton post,posted,viewapt;
+    Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +33,11 @@ public class Renter_Home extends AppCompatActivity {
         posted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Renter_Home.this,MyPostedApartments.class);
-                startActivity(intent);
+                Intent intent = getIntent();
+                String Email = intent.getStringExtra("Email");
+                Intent i = new Intent(getApplicationContext(),MyPostedApartments.class);
+                intent.putExtra("Email",Email);
+                startActivity(i);
             }
         });
 
@@ -42,5 +49,18 @@ public class Renter_Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        logout = findViewById(R.id.logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),Login.class));
+                finish();
+            }
+        });
+
     }
 }

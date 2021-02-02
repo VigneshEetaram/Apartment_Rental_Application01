@@ -84,6 +84,11 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:visibility="invisible" />
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <include layout="@layout/message_icon"/>

@@ -161,10 +161,6 @@ public class Login extends AppCompatActivity {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
 
-                    if (documentSnapshot.getString("isAdmin") != null){
-                        startActivity(new Intent(getApplicationContext(),Admin.class));
-                        finish();
-                    }
                     if (documentSnapshot.getString("isTenant") != null){
                         startActivity(new Intent(getApplicationContext(),Tenant.class));
                         finish();
