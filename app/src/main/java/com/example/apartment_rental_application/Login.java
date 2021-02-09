@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
     EditText lEmail, lPassword;
     FirebaseFirestore lStore;
     FirebaseAuth lAuth;
-    Button lLogin,lRegister, lForgotPassword, lAdminLogin;
+    Button lLogin,lRegister, lForgotPassword;
     Boolean valid = true;
 
     @Override
@@ -37,14 +37,8 @@ public class Login extends AppCompatActivity {
         lLogin = findViewById(R.id.LogIn_BTN);
         lRegister = findViewById(R.id.Login_register);
         lForgotPassword = findViewById(R.id.Register_forgot);
-        lAdminLogin = findViewById(R.id.btn_adminLogin);
 
-        lAdminLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),adminLogin.class));
-            }
-        });
+
 
 
         lStore = FirebaseFirestore.getInstance();
@@ -68,33 +62,34 @@ public class Login extends AppCompatActivity {
          * performing login activity
          */
 
-        if(valid){
-
             lLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
                     checkField(lEmail);
                     checkField(lPassword);
-                    lAuth.signInWithEmailAndPassword(lEmail.getText().toString(),lPassword.getText().toString())
-                            .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                                @Override
-                                public void onSuccess(AuthResult authResult) {
-                                    Toast.makeText(Login.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                                    checkAccessLevel(authResult.getUser().getUid());
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.d("TAG","Error Login "+ e.getMessage());
-                            Toast.makeText(Login.this, "fail login", Toast.LENGTH_SHORT).show();
+                    if(valid) {
+                        lAuth.signInWithEmailAndPassword(lEmail.getText().toString(), lPassword.getText().toString())
+                                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                                    @Override
+                                    public void onSuccess(AuthResult authResult) {
+                                        Toast.makeText(Login.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                                        checkAccessLevel(authResult.getUser().getUid());
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.d("TAG", "Error Login " + e.getMessage());
+                                Toast.makeText(Login.this, "fail login", Toast.LENGTH_SHORT).show();
 
-                        }
-                    });
+                            }
+                        });
+                    }
 
                 }
             });
 
-        }
+
 
 
 
@@ -139,7 +134,7 @@ public class Login extends AppCompatActivity {
     private Boolean checkField(EditText TextField) {
 
         if(TextField.getText().toString().isEmpty()){
-            TextField.setError("Error");
+            TextField.setError("Enter Text");
             valid = false;
         }else{
             valid = true;

@@ -102,14 +102,15 @@
             android:textSize="22dp"
             ></CheckBox>
     </LinearLayout>
+
     <Button
         android:id="@+id/Register_BTN"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/CREATE_PROFILE"
+        android:layout_width="372dp"
+        android:layout_height="39dp"
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:background="?android:attr/colorFocusedHighlight"
+        android:text="@string/CREATE_PROFILE"
         app:backgroundTint="@color/black"
         app:backgroundTintMode="add"
         tools:layout_editor_absoluteX="151dp"
@@ -117,8 +118,8 @@
 
     <Button
         android:id="@+id/login_BTN"
-        android:layout_width="375dp"
-        android:layout_height="wrap_content"
+        android:layout_width="371dp"
+        android:layout_height="38dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="?android:attr/colorFocusedHighlight"
