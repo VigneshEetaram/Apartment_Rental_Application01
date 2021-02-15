@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/splash_logo"
+        android:src="@mipmap/splash_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageButton>
 

@@ -92,13 +92,4 @@
             ></Button>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_adminLogin"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Admin"
-        android:textColor="?android:attr/colorFocusedHighlight"/>
-
 </LinearLayout>
